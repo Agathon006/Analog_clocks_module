@@ -1,0 +1,93 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-dark {
+    background-color: rgb(38, 38, 38);
+}
+
+.theme-button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
+    background-color: white;
+    z-index: 5;
+}
+
+.theme-button-light {
+    
+    border: 3px solid black;
+
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+
+.theme-button-dark {
+    
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+.clocks-container {
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/clock-background.png);
+    background-size: cover;
+}
+
+.hour-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+}
+
+.hour-arrow {
+    margin-top: 110px;
+    margin-left: calc(50% - 5px);
+    height: 130px;
+    width: 10px;
+    background-color: black;
+}
+
+.minute-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 3;
+}
+
+.minute-arrow {
+    margin-top: 80px;
+    margin-left: calc(50% - 3px);
+    height: 170px;
+    width: 6px;
+    background-color: black;
+}
+
+.arrow-border {
+    border: 1px white solid;
+}
+
+.second-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 4;
+}
+
+.second-arrow {}
